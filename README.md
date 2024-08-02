@@ -16,11 +16,11 @@ plt.title('Count of Channels by Country')
 plt.xlabel('Country')
 plt.ylabel('Number of Channels')
 plt.show()
-'''
+```
 <img width="789" alt="image" src="https://github.com/user-attachments/assets/ed9ea7b7-3020-4adc-ad1f-5f42129d441b">
 country_counts를 통해 country 항목에 있는 값을 가져오고, plt.figure를 통해 그래프 크기를 정한 후, ~.plot을 통해 데이터를 막대그래프로 나타내었다.
 2) 국가별 top 1000 채널 비율
-'''
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -32,11 +32,11 @@ plt.figure(figsize = (12, 6))
 plt.pie(category_counts, labels = category_counts.index, autopct = '%1.1f%%', startangle = 90)
 plt.title('Distribution of Channels by Country')
 plt.show()
-'''
+```
 <img width="422" alt="image" src="https://github.com/user-attachments/assets/152d0499-f735-4a47-a171-f70ca0c0cc13">
 category_counts를 통해 country 항목에 있는 값을 가져온 후, plt.figure로 그래프의 크기를 정한 후, plt.pie를 통해 데이터를 원그래프로 나타내었다.
 3) 국가별 top 1000 채널의 수(가로 형태의 막대그래프)
-'''
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -50,6 +50,6 @@ plt.title('Count of Channels by Country')
 plt.xlabel('Number of Channels')
 plt.ylabel('Country')
 plt.show()
-'''
+```
 <img width="836" alt="image" src="https://github.com/user-attachments/assets/7a1dc467-9714-44fe-866b-f6897e7b1366">
 country_counts를 통해 country 항목에 있는 값을 가져오고, plt.figure를 통해 그래프 크기를 정한 후, ~.plot을 통해 데이터를 가로 형태의 막대그래프로 나타내었다.
